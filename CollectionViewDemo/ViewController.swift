@@ -18,6 +18,16 @@ class ViewController: UIViewController {
         vms.append(MyImageViewModel("https://res.cloudinary.com/liftopia/image/upload/b_transparent,c_pad,g_center,h_175,w_263/v1512090339/production/logos/f2bc897dc48bb93586182e49fc9e1397.png"))
         vms.append(MyImageViewModel("https://www.alta.com/ui/alta/img/alta-80th-blue.png"))
         vms.append(MyImageViewModel("https://d1pdyfnmzhu191.cloudfront.net/content/img/mammothmtn/mmsa2017/mammoth-logo-trans.png"))
+        vms.append(MyImageViewModel("https://res.cloudinary.com/liftopia/image/upload/b_transparent,c_pad,g_center,h_175,w_263/v1512090339/production/logos/f2bc897dc48bb93586182e49fc9e1397.png"))
+        vms.append(MyImageViewModel("https://www.alta.com/ui/alta/img/alta-80th-blue.png"))
+        vms.append(MyImageViewModel("https://d1pdyfnmzhu191.cloudfront.net/content/img/mammothmtn/mmsa2017/mammoth-logo-trans.png"))
+        vms.append(MyImageViewModel("https://res.cloudinary.com/liftopia/image/upload/b_transparent,c_pad,g_center,h_175,w_263/v1512090339/production/logos/f2bc897dc48bb93586182e49fc9e1397.png"))
+        vms.append(MyImageViewModel("https://www.alta.com/ui/alta/img/alta-80th-blue.png"))
+        vms.append(MyImageViewModel("https://d1pdyfnmzhu191.cloudfront.net/content/img/mammothmtn/mmsa2017/mammoth-logo-trans.png"))
+        vms.append(MyImageViewModel("https://res.cloudinary.com/liftopia/image/upload/b_transparent,c_pad,g_center,h_175,w_263/v1512090339/production/logos/f2bc897dc48bb93586182e49fc9e1397.png"))
+        vms.append(MyImageViewModel("https://www.alta.com/ui/alta/img/alta-80th-blue.png"))
+        vms.append(MyImageViewModel("https://d1pdyfnmzhu191.cloudfront.net/content/img/mammothmtn/mmsa2017/mammoth-logo-trans.png"))
+        
         let myLayout = MyLayout()
         myLayout.initialize(vms)
         

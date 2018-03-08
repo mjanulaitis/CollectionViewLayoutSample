@@ -6,6 +6,7 @@ class MyLayout : UICollectionViewLayout {
     private var vms : [MyImageViewModel] = []
     private var itemAttributes : [UICollectionViewLayoutAttributes] = []
     private var BUFFER : CGFloat = 10
+    private var calculatedHeight :CGFloat = 0
     
     func initialize(_ vms:[MyImageViewModel]) {
         self.vms = vms
@@ -68,11 +69,20 @@ class MyLayout : UICollectionViewLayout {
                     xOffset += smallImageSize + BUFFER
                 }
             }
+            if vms.count > 0
+            {
+                if vms.count <= 3 {
+                    calculatedHeight = BUFFER + largeImageSize + BUFFER
+                }
+                else {
+                    calculatedHeight = yOffset + smallImageSize + BUFFER
+                }
+            }
         }
     }
     
     override public var collectionViewContentSize: CGSize {
-        return CGSize(width: collectionView!.frame.width, height: collectionView!.frame.height)
+        return CGSize(width: collectionView!.frame.width, height: calculatedHeight)
     }
     
     override public func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
